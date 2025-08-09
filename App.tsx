@@ -5,6 +5,9 @@ import { AIPoweredRequirementAnalyzer } from './components/AIPoweredRequirementA
 import { TDDGenerator } from './components/TDDGenerator';
 import { MarkdownPreviewer } from './components/MarkdownPreviewer';
 import { usePixiBackground } from './hooks/usePixiBackground';
+import 
+{ SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 
 enum AppTab {
   MARKDOWN_PREVIEWER = 'MARKDOWN_PREVIEWER',
@@ -51,6 +54,8 @@ const App: React.FC = () => {
   return (
     <div className="relative min-h-screen w-full bg-gray-900 text-white font-sans overflow-hidden">
       <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0" />
+      <SpeedInsights />
+      <Analytics />
       <div className="relative z-10 flex flex-col items-center w-full min-h-screen p-4 sm:p-6 lg:p-8">
         <header className="w-full max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center mb-6 backdrop-blur-sm bg-black/30 p-4 rounded-xl border border-gray-700">
           <div className="flex items-center gap-3">
