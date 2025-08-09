@@ -16,7 +16,7 @@ enum AppTab {
 }
 
 const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<AppTab>(AppTab.MARKDOWN_PREVIEWER);
+  const [activeTab, setActiveTab] = useState<AppTab>(AppTab.GENERATOR);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   usePixiBackground(canvasRef);
 
