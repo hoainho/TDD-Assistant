@@ -76,7 +76,7 @@ const App: React.FC = () => {
         </main>
         
         <footer className="w-full max-w-7xl mx-auto mt-8 text-center text-xs text-gray-500">
-            <p>Powered by Gemini & React. Designed for modern engineering workflows.</p>
+            <p>Powered by Hoai-Nho. Designed for modern engineering workflows.</p>
         </footer>
       </div>
     </div>
