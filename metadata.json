@@ -1,0 +1,6 @@
+{
+  "name": "GearGames: AI TDD Assistant",
+  "description": "An intelligent assistant to help developers drastically reduce the time needed to create Technical Design Documents (TDD) by automating requirement analysis and document generation.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
